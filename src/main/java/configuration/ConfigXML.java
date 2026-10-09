@@ -90,12 +90,7 @@ public class ConfigXML {
 			  NodeList list = doc.getElementsByTagName("config"); 
 			  Element config = (Element) list.item(0); 
 			  String value = ((Element) config.getElementsByTagName("businessLogic").item(0)).getAttribute("local"); 
-			  businessLogicLocal = value.equals("true"); 
-			  businessLogicNode = getTagValue("businessLogicNode", config); 
-			  businessLogicPort = getTagValue("businessLogicPort", config); 
-			  businessLogicName = getTagValue("businessLogicName", config); 
-			  locale = getTagValue("locale", config);
-			  dbFilename = getTagValue("dbFilename", config);
+			 1
 
 				//Two possible values: true (no instance of RemoteServer needs to be launched) or false (RemoteServer needs to be run first)
 			  value= ((Element)config.getElementsByTagName("database").item(0)).getAttribute("local");
